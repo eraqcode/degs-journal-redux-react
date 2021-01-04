@@ -1,0 +1,26 @@
+@import './base/base';
+
+//Themes
+@import './themes/blue-theme';
+@import './themes/pink-theme';
+@import './themes/green-theme';
+@import './themes/orange-theme';
+@import './themes/gradient-theme';
+
+//Components
+@import './components/home/authButtons';
+@import './components/home/homePage';
+
+@import './components/auth/loginPage';
+@import './components/auth/signupPage';
+
+//Dashboard
+@import './components/dashboard/header/header';
+@import './components/dashboard/sidebar/sidebar';
+
+//Pages
+@import './components/dashboard/pages/notesPage';
+@import './components/dashboard/pages/formNotes';
+@import './components/dashboard/pages/themesPage';
+//Routes
+@import './routes/dashboard';

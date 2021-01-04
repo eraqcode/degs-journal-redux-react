@@ -1,0 +1,54 @@
+.theme-gradient {
+    background: #ff0084;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #33001b, #ff0084);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #33001b, #ff0084); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    .header__dashboard {
+        background: #33001b;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #33001b, #ff0084);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #33001b, #ff0084); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        color: rgb(255, 255, 255);
+        .btn__logout {
+            color: white;
+            border: 3px solid white;
+        }
+    }
+
+    .dashboard__content {
+        aside {
+            background: #ff0084;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #33001b, #ff0084);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #33001b, #ff0084); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            color: rgb(255, 255, 255);
+
+        }
+
+        .nav__link {
+            color: rgb(236, 206, 206);
+            font-weight: 600;
+            font-size: 1.4rem;
+        }
+
+        .page__content {
+            background-color: rgb(243, 193, 193);
+            color: rgb(0, 0, 0);
+
+            .appbar {
+                background: #ff0084;  /* fallback for old browsers */
+                background: -webkit-linear-gradient(to right, #33001b, #ff0084);  /* Chrome 10-25, Safari 5.1-6 */
+                background: linear-gradient(to right, #33001b, #ff0084); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+                color: rgb(0, 0, 0);
+                .appbar__area-date {
+                    color: white;
+                }
+                .btn__appbar {
+                    border: 2px solid rgb(180, 205, 241);
+                    color: rgb(255, 255, 255);
+                }
+            }
+
+        }
+        
+    }
+
+}

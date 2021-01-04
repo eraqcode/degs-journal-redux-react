@@ -1,0 +1,36 @@
+.theme-green {
+    background-color: rgb(2, 71, 5);
+    .header__dashboard {
+        background-color: rgb(2, 71, 5);
+        color: white;
+
+        .btn__logout {
+            color: white;
+            border: 3px solid white;
+        }
+    }
+
+    .dashboard__content {
+        aside {
+            background-color: rgb(2, 71, 5);
+            color: rgb(195, 209, 201);
+        }
+
+        .page__content {
+            background-color: rgb(196, 224, 196);
+            color: rgb(2, 71, 5);
+
+            .appbar {
+                background-color: rgb(2, 71, 5);
+                color: white;
+                .btn__appbar {
+                    border: 2px solid rgb(180, 205, 241);
+                    color: rgb(180, 205, 241);
+                }
+            }
+
+        }
+        
+    }
+
+}

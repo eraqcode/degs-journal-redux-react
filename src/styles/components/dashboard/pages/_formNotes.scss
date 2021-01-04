@@ -1,0 +1,90 @@
+//Appbar
+.appbar {
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    height: 40px;
+    width: 100%;
+    margin-top: -2px;
+    padding-bottom: 4px;
+}
+
+form {
+    margin-top: 10px;
+    width: 100%;
+}
+
+.form__group {
+    width: 100%;
+}
+
+.form__group:nth-of-type(1) {
+    display: flex;
+    justify-content: space-around;
+}
+
+.form__group:nth-of-type(1) input {
+    width: 40%;
+    height: 30px;
+    font-size: 1.4rem;
+    font-weight: 600;
+    background-color: transparent;
+    border: transparent;
+    border-bottom: 2px solid black;
+}
+
+.form__group:nth-of-type(1) input:focus {
+    outline: none;
+}
+
+.form__group:nth-of-type(1) select {
+    width: 40%;
+    height: 30px;
+    font-size: 1.4rem;
+    font-weight: 600;
+    background-color: transparent;
+    border: transparent;
+    border-bottom: 2px solid black;
+}
+
+.form__group textarea {
+    display: block;
+    width: 90%;
+    margin: 10px auto 10px auto;
+    background-color: transparent;
+    font-weight: 600;
+    font-size: 1.3rem;
+    border: transparent;
+}
+
+.form__group textarea:focus {
+    outline: none;
+}
+
+.btn__appbar {
+    margin-left: 8px;
+    padding: 3px;
+    width: 80px;
+    font-size: .6rem;
+    background-color: transparent;
+}
+
+.note__picture {
+    width: 160px;
+    height: 160px;
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+
+.note__picture img {
+    height: 100%;
+    width: 100%;
+}
+
+@media only screen and ( min-width: 768px ) {
+    .btn__appbar {
+        width: 140px;
+        font-size: 1.2rem;
+        
+    }
+}

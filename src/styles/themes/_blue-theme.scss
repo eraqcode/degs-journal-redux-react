@@ -1,0 +1,35 @@
+.theme-blue {
+    background-color: rgb(3, 26, 58);
+    .header__dashboard {
+        background-color: rgb(3, 26, 58);
+        color: white;
+        .btn__logout {
+            color: white;
+            border: 3px solid white;
+        }
+    }
+
+    .dashboard__content {
+        aside {
+            background-color: rgb(3, 26, 58);
+            color: white;
+        }
+
+        .page__content {
+            background-color: rgb(180, 205, 241);
+            color: rgb(28, 58, 87);
+
+            .appbar {
+                background-color: rgb(3, 26, 58);
+                color: white;
+                .btn__appbar {
+                    border: 2px solid rgb(180, 205, 241);
+                    color: rgb(180, 205, 241);
+                }
+            }
+
+        }
+        
+    }
+
+}
