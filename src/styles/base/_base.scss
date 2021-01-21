@@ -52,5 +52,9 @@
     width: 100%;
     min-height: 100vh;
     margin-left: -200px;
-    padding: 0;
+    padding-bottom: 20px;
+}
+
+input:focus {
+    outline: none;
 }

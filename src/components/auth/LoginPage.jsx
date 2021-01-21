@@ -1,10 +1,49 @@
 import React from 'react'
+import validator from 'validator'
+import { useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom'
+import { LoginWithEmailPassword, LoginWithGoogle } from '../../actions/authActions';
+import { useForm } from '../../hooks/useForm';
+import { setError, removeError } from '../../actions/uiActions'
 
 export const LoginPage = () => {
+
+    const dispatch = useDispatch()
+    const [ formVAlues, handleInputChange ] = useForm({
+        email: '',
+        password: '',
+    });
+    const {email, password} = formVAlues
+
+    const handleLoginGoogle = () => {
+        dispatch( LoginWithGoogle() );
+    }
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        if ( isFormValid ) {
+            dispatch( LoginWithEmailPassword( email, password ) )
+        }
+        
+    }
+
+    const isFormValid = () => {
+        
+        if ( !validator.isEmail( email ) ) {
+            dispatch( setError('Email is not valid') )
+            return false;
+        } else if ( password.trim().length === 0  ) {
+            dispatch( setError('Password is required') )
+            return false
+        }
+        
+        dispatch( removeError() );
+       return true;
+    }
+
     return (
         <div className="login__page">
-            <form className="login__form">
+            <form className="login__form" onSubmit={handleSubmit}>
                 <header className="login__header">
                     <h3> Login </h3>
                 </header>
@@ -13,14 +52,16 @@ export const LoginPage = () => {
                     type="email"
                     name="email"
                     placeholder="Enter an email"
-                    
+                    value={email}
+                    onChange={handleInputChange}
                 />
                 <input 
                     className="login__input"
                     type="password" 
                     name="password" 
                     placeholder="Password"
-                    
+                    value={password}
+                    onChange={handleInputChange}
                 />
 
                 <button 
@@ -38,7 +79,7 @@ export const LoginPage = () => {
                 
 
                 <div 
-                   
+                    onClick={handleLoginGoogle}
                     className="google__btn"
                 >
                     <div className="google__btn-img">
@@ -56,7 +97,7 @@ export const LoginPage = () => {
                 </div>
 
                 <Link
-                    to="/auth/register"
+                    to="/signup"
                     className="link"
                 >
                     Create An Account

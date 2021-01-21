@@ -23,7 +23,7 @@ export const DashboardRouter = () => {
             dispatch( ChangeTheme( currentTheme ) )
         }
         
-    }, [])
+    }, [dispatch])
 
     useEffect(() => {
        if (width > 768) {

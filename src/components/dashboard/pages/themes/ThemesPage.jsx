@@ -37,6 +37,21 @@ export const ThemesPage = () => {
                 >
                 </div>
                 <div
+                    onClick={ () => handleClickTheme( 'theme-cyan' ) } 
+                    className="theme theme-cyan"
+                >
+                </div>
+                <div
+                    onClick={ () => handleClickTheme( 'theme-black' ) } 
+                    className="theme theme-black"
+                >
+                </div>
+                <div
+                    onClick={ () => handleClickTheme( 'theme-light' ) } 
+                    className="theme theme-light"
+                >
+                </div>
+                <div
                     onClick={ () => handleClickTheme( 'theme-gradient' ) } 
                     className="theme theme-gradient"
                 >

@@ -5,7 +5,10 @@
 @import './themes/pink-theme';
 @import './themes/green-theme';
 @import './themes/orange-theme';
+@import './themes/cyan-theme';
 @import './themes/gradient-theme';
+@import './themes/black-theme';
+@import './themes/light-theme';
 
 //Components
 @import './components/home/authButtons';
@@ -22,5 +25,6 @@
 @import './components/dashboard/pages/notesPage';
 @import './components/dashboard/pages/formNotes';
 @import './components/dashboard/pages/themesPage';
+@import './components/dashboard/pages/account';
 //Routes
 @import './routes/dashboard';

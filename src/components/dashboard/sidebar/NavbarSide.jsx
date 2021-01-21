@@ -1,8 +1,10 @@
 import React from 'react'
-import { FaInfo, FaPalette, FaPallet, FaPlusSquare, FaPortrait, FaRegNewspaper } from 'react-icons/fa'
+import { FaPalette, FaPlusSquare, FaPortrait, FaRegNewspaper } from 'react-icons/fa'
 import { NavLink } from 'react-router-dom'
 
 export const NavbarSide = () => {
+
+    
     return (
         <nav>
             <ul className="nav">

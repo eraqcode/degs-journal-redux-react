@@ -27,7 +27,7 @@
     border-radius: 5px;
     border: 2px solid rgb(0, 0, 26);
     background-color: lighten($color: white, $amount: 10);
-    color: white;
+    color: rgb(0, 0, 0);
 }
 .login__input:focus {
     outline: none;

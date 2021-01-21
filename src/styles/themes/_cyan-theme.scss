@@ -1,7 +1,7 @@
-.theme-blue {
-    background-color: rgb(3, 26, 58);
+.theme-cyan {
+    background-color: rgb(36, 125, 250);
     .header__dashboard {
-        background-color: rgb(3, 26, 58);
+        background-color: rgb(36, 125, 250);
         color: white;
         .btn__logout {
             color: white;
@@ -11,28 +11,28 @@
 
     .dashboard__content {
         aside {
-            background-color: rgb(3, 26, 58);
-            color: white;
+            background-color: rgb(36, 125, 250);
+            color: rgb(255, 255, 255);
         }
 
         .page__content {
             background-color: rgb(180, 205, 241);
             color: rgb(28, 58, 87);
             .note__entry {
-                background-color: rgb(1, 15, 54);
+                background-color: rgb(3, 69, 107);
                 color: white;
             }
             .appbar {
-                background-color: rgb(3, 26, 58);
+                background-color: rgb(36, 125, 250);
                 color: white;
                 .btn__appbar {
-                    border: 2px solid rgb(180, 205, 241);
-                    color: rgb(180, 205, 241);
+                    border: 2px solid rgb(255, 255, 255);
+                    color: rgb(255, 255, 255);
                 }
             }
 
             option {
-                background-color: rgb(3, 26, 58);
+                background-color: rgb(36, 125, 259);
                 color: white;
             }
 

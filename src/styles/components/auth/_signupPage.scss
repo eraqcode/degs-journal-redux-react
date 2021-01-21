@@ -27,7 +27,7 @@
     border-radius: 5px;
     border: 2px solid rgb(0, 0, 26);
     background-color: lighten($color: white, $amount: 10);
-    color: white;
+    color: rgb(0, 0, 0);
 }
 .signUp__input:focus {
     outline: none;
@@ -49,7 +49,7 @@
 }
 
 .link__title {
-    color: darken($color: white, $amount: 30);
+    color: darken($color: white, $amount: 80);
     font-weight: 600;
 }
 
