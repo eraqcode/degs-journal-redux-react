@@ -12,7 +12,7 @@
 }
 
 .login__form {
-    width: 21.5%;
+    width: 80%;
     background-color: white;
     padding: 24px;
     display: flex;
@@ -90,4 +90,10 @@
     color: darken($color: white, $amount: 30);
     font-size: .9rem;
     font-weight: 700;
+}
+
+@media only screen and ( min-width: 768px ) {
+    .login__form {
+        width: 21.5%;
+    }
 }
